@@ -1,0 +1,208 @@
+:root{
+    --color-primario: #000000;
+    --color-secundario: #6482AD;
+    --color-terciario: #40A2D8;
+    --color-hover: #f8f8f8;
+    --color-letra: #758694; 
+    --color-m: #987D9A; 
+    --color-gray: #343A40;
+} 
+
+*{
+    background-color: var(--color-hover);
+    padding: 4px;
+    margin: 0;
+    font-family: 'Inter';    
+    font-weight: 400;
+    
+    line-height: 150%;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+
+.footer{
+    background-color: var(--color-hover);
+    padding: 8px;
+    color: var(--color-terciario);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+
+.text_area{
+    border: none;
+    color: #40A2D8;
+    margin-top: 90px;  
+    font-size: 32px;  
+    }
+
+    .text_area::placeholder {
+        color: var(--color-secundario);
+    }
+    .text_area:focus {
+        outline: none;
+    }
+
+.mensaje{
+    background: var(--color-hover);
+    background-image: url(/imagenes/busqueda-removebg-preview.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 30px;
+    color: var(--color-m);
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-left: 20px;
+    height: 600px;
+    position: fixed; 
+    font-size: 32px;   
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.boton_encriptar{
+    background-color: var(--color-terciario);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 2px var(--color-secundario);
+    color: var(--color-hover);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 24px;
+}
+.boton_desencriptar{
+    background-color: var(--color-secundario);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 2px var(--color-terciario);
+    color: var(--color-hover);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 24px;
+}
+.copiar{    
+    border: 2px solid transparent;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 2px var(--color-terciario);
+    color: var(--color-primario);
+    position: absolute;
+    margin-top: 470px;
+    height: 67px;
+    margin-left: 110px;
+    width: 336px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.informacion{
+    color: var(--color-letra);
+    font-size: 18px;
+}
+
+
+/* Media Query para pantallas de 768px o menos (tablets y smartphones) */
+@media (max-width: 768px) {
+    .logo {
+        width: 15%; 
+    }
+    
+    main {
+        flex-direction: column; 
+        margin-left: 0; 
+    }
+
+    .mensaje {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-top: 50px; 
+        height: 400px; 
+        font-size: 24px; 
+    }
+
+    .text_area {
+        font-size: 24px; 
+        margin-top: 20px; 
+    }
+
+    .botones {
+        flex-direction: column; 
+        align-items: center;
+       
+    }
+
+    .boton_encriptar,
+    .boton_desencriptar {
+        width: 90%; 
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+
+    .copiar {
+        width: 20%; 
+        margin-left: 10%; 
+        margin-top: 20px; 
+        font-size: 20px; 
+        
+    }
+
+    .footer {
+        font-size: 18px; 
+    }
+
+    .informacion {
+        font-size: 16px; 
+    }
+}
+
+/* Media Query para pantallas de 480px o menos (smartphones pequeños) */
+@media (max-width: 480px) {
+    .logo {
+        width: 20%; 
+    }
+
+    .mensaje {
+        height: 300px; 
+        font-size: 20px; 
+    }
+
+    .text_area {
+        font-size: 20px; 
+
+    .boton_encriptar,
+    .boton_desencriptar {
+        width: 70%; 
+        font-size: 20px; 
+    }
+
+    .copiar {
+        width: 70%; 
+        font-size: 18px; 
+        
+    }
+
+    .footer {
+        font-size: 16px; 
+    }
+
+    .informacion {
+        font-size: 14px; 
+}

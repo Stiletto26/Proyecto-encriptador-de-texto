@@ -56,7 +56,7 @@ main{
 
 .mensaje{
     background: var(--color-hover);
-    background-image: url(/imagenes/busqueda-removebg-preview.png);
+    background-image: url(./imagenes/busqueda-removebg-preview.png);
     background-repeat: no-repeat;
     border: none;
     border-radius: 30px;
